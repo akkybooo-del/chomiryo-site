@@ -445,6 +445,15 @@
       color: rgba(232,238,242,0.4);
       font-size: 0.75rem;
     }
+    footer a { color: var(--amber-hot); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .foot-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 0.9rem;
+      align-items: center;
+      margin-bottom: 0.7rem;
+    }
 
     @keyframes rise {
       from { opacity: 0; transform: translateY(28px); }
@@ -584,12 +593,17 @@
           <dd>買い切り ¥300</dd>
         </div>
       </dl>
-      <a class="btn btn-amber" href="#">App Store で入手（準備中）</a>
+      <!-- 公開後: href を App Store 製品ページに、テキストを「App Store で入手」に差し替え -->
+      <a class="btn btn-amber" href="#get">App Store で入手（近日公開）</a>
     </div>
   </section>
 
   <footer>
-    <p>© Chomiryo — 調味料在庫アプリ</p>
+    <p class="foot-links">
+      <a href="privacy-policy.html">プライバシーポリシー</a>
+      <a href="mailto:info@tethtechlabs.com">お問い合わせ</a>
+    </p>
+    <p>© 2026 TethTechLabs — Chomiryo（調味料在庫）</p>
   </footer>
 </body>
 </html>
